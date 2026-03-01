@@ -12,7 +12,8 @@
     "@acve/shared": "workspace:*",
     "@ai-sdk/anthropic": "^1.1.6",
     "@ai-sdk/openai": "^1.1.9",
-    "ai": "^4.1.21"
+    "ai": "^4.1.21",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.18.0",

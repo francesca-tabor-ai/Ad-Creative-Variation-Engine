@@ -13,10 +13,13 @@
     "@acve/shared": "workspace:*",
     "@acve/db": "workspace:*",
     "@acve/ai": "workspace:*",
+    "drizzle-orm": "^0.38.3",
+    "nanoid": "^5.0.9",
     "next": "^15.1.0",
     "next-auth": "^5.0.0-beta.25",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "zod": "^3.24.1",
     "zustand": "^5.0.2"
   },
   "devDependencies": {
