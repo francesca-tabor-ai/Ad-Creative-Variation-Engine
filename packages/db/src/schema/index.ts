@@ -6,3 +6,4 @@ export * from "./reviews";
 export * from "./render-jobs";
 export * from "./assets";
 export * from "./deployments";
+export * from "./governance";

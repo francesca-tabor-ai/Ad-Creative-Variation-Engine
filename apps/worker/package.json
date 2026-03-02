@@ -14,8 +14,12 @@
     "@acve/shared": "workspace:*",
     "@acve/db": "workspace:*",
     "@acve/ai": "workspace:*",
+    "@acve/renderer": "workspace:*",
+    "@acve/storage": "workspace:*",
     "bullmq": "^5.31.0",
-    "ioredis": "^5.4.2"
+    "drizzle-orm": "^0.38.3",
+    "ioredis": "^5.4.2",
+    "nanoid": "^5.0.9"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.18.0",

@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@acve/shared": "workspace:*",
+    "@acve/db": "workspace:*",
     "@ai-sdk/anthropic": "^1.1.6",
     "@ai-sdk/openai": "^1.1.9",
     "ai": "^4.1.21",
+    "drizzle-orm": "^0.38.3",
+    "nanoid": "^5.0.9",
     "zod": "^3.24.1"
   },
   "devDependencies": {
