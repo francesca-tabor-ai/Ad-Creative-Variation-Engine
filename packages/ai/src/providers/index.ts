@@ -31,5 +31,28 @@ export function getProvider(provider?: AIProvider): ProviderConfig {
   }
 }
 
+export function getProviderFast(provider?: AIProvider): ProviderConfig {
+  const selected = provider ?? (process.env.DEFAULT_AI_PROVIDER as AIProvider) ?? "anthropic";
+
+  switch (selected) {
+    case "openai": {
+      const openai = getOpenAIProvider();
+      return {
+        model: openai(OPENAI_MODELS.textFast),
+        name: "openai",
+      };
+    }
+    case "anthropic": {
+      const anthropic = getAnthropicProvider();
+      return {
+        model: anthropic(ANTHROPIC_MODELS.textFast),
+        name: "anthropic",
+      };
+    }
+    default:
+      throw new Error(`Unsupported AI provider: ${selected}`);
+  }
+}
+
 export { getOpenAIProvider, OPENAI_MODELS } from "./openai";
 export { getAnthropicProvider, ANTHROPIC_MODELS } from "./anthropic";
